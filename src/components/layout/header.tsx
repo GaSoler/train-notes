@@ -41,7 +41,7 @@ export function Header() {
         <DropdownMenu>
           <DropdownMenuTrigger>
             <Avatar>
-              <AvatarImage src="https://github.com/GaSoler.png" alt="@gasoler" />
+              <AvatarImage src="https://github.com/vercel.png" alt="@gasoler" />
               <AvatarFallback>GS</AvatarFallback>
             </Avatar>
           </DropdownMenuTrigger>

@@ -24,7 +24,7 @@ export function ExerciseSetup({ exercise, onRemoveExercise }: ConfigureSetProps)
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <Avatar>
-            <AvatarImage src="https://github.com/GaSoler.png" alt="@gasoler" />
+            <AvatarImage src="https://github.com/vercel.png" alt="@gasoler" />
             <AvatarFallback>GS</AvatarFallback>
           </Avatar>
           <p>{exercise}</p>

@@ -11,8 +11,13 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Plus } from "lucide-react"
+import { GenericCombobox } from "./generic-combobox"
+import { exerciseType } from '@/utils/dataUtils'
+import { useState } from "react"
 
 export function CustomExercise() {
+  const [selectedExerciseType, setSelectedExerciseType] = useState("");
+  
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -20,7 +25,7 @@ export function CustomExercise() {
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Edit profile</DialogTitle>
+          <DialogTitle>Create Exercise</DialogTitle>
           <DialogDescription>
             Make changes to your profile here. Click save when youre done.
           </DialogDescription>
@@ -28,19 +33,39 @@ export function CustomExercise() {
         <div className="grid gap-4 py-4">
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="name" className="text-right">
-              Name
+              Exercise Name
             </Label>
             <Input id="name" value="Pedro Duarte" className="col-span-3" />
           </div>
           <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="equipment" className="text-right">
+              Exercise Type
+            </Label>
+            <div className="col-span-3" id="equipment">
+              <GenericCombobox items={exerciseType} placeholder="Select equipment..." onChange={setSelectedExerciseType} />
+            </div>
+          </div>
+          <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="username" className="text-right">
-              Username
+              Equipment
+            </Label>
+            <Input id="username" value="@peduarte" className="col-span-3" />
+          </div>
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="username" className="text-right">
+              Primary Muscle Group
+            </Label>
+            <Input id="username" value="@peduarte" className="col-span-3" />
+          </div>
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="username" className="text-right">
+              Other Muscles
             </Label>
             <Input id="username" value="@peduarte" className="col-span-3" />
           </div>
         </div>
         <DialogFooter>
-          <Button type="submit">Save changes</Button>
+          <Button type="submit">Save exercise</Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

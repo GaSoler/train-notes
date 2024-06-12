@@ -20,7 +20,7 @@ export function ExerciseCard({ muscle, exercise, onAddExercise }: ExerciseCardPr
     <div onClick={handleClick} className="flex border p-2 items-center gap-1 cursor-pointer hover:bg-muted-foreground/10">
       <Plus size={20} />
       <Avatar>
-        <AvatarImage src="https://github.com/GaSoler.png" alt="@gasoler" />
+        <AvatarImage src="https://github.com/vercel.png" alt="@gasoler" />
         <AvatarFallback>GS</AvatarFallback>
       </Avatar>
       <div className="flex flex-col justify-between">
