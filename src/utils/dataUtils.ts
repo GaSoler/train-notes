@@ -21,6 +21,17 @@ export const exercises = [
   { value: "20", label: "Prancha lateral", muscle: "Abdominals", equipment: "None" },
 ]
 
+export const exerciseType = [
+  { value: "1", label: "Weight Reps" },
+  { value: "2", label: "Reps Only" },
+  { value: "3", label: "Weighted Bodyweight" },
+  { value: "4", label: "Assisted Bodyweight" },
+  { value: "5", label: "Duration" },
+  { value: "6", label: "Weight & Duration" },
+  { value: "7", label: "Distance Duration" },
+  { value: "8", label: "Weight & Distance" },
+]
+
 export const equipment = [
   { value: "All", label: "All Equipment" },
   { value: "None", label: "None" },
@@ -119,4 +130,42 @@ export const timers = [
   "04:50",
   "04:55",
   "05:00",
+]
+
+export const setDetails = [
+  {
+    name: 'Warm up',
+    shorter: 'WU',
+    description: 'séries para “aquecimento”, de 18-20reps, não precisa falhar. Deixe de 3-5 repetições antes da falha. Sem ter qualquer ajuda para executar as últimas repetições.',
+  },
+  {
+    name: 'Working set',
+    shorter: 'WS',
+    description: 'série depois do warm up, ficando 1 a 3 repetições antes da falha. Pode chegar próximo a falha concêntrica ou até o movimento não sair mais com perfeição. Sem ter qualquer ajuda para executar as últimas repetições.',
+  },
+  {
+    name: 'Feeder set',
+    shorter: 'FS',
+    description: 'série de “preparação”, ficando 4-6 repetições antes da falha.',
+  },
+  {
+    name: 'Hard set / Top set',
+    shorter: 'HS TS',
+    description: '(FALHA TOTAL) NAS PRIMEIRAS SEMANAS, A IDEIA É ENTENDER SE OS EXERCÍCIOS ESTÃO DE ACORDO COM A NECESSIDADE E SE EXISTE ALGUMA MUDANÇA A SER FEITO. COMO ESTÁ VOLTANDO A TER UM ROTINA DE TREINAMENTO, PRECISAMOS INICIAR O TREINO DE UM PONTO INICIAL PARA ASSIM SEGUIR COM A PERIODIZAÇÃO E PROGRESSÃO',
+  },
+  {
+    name: 'Back off set',
+    shorter: 'BO',
+    description: 'nesse método o indivíduo consegue explorar um volume maior em menos tempo sem perder tanto a intensidade. Porque no back of set o indivíduo realiza, por exemplo, 8 repetições guarda o peso, descansa 30 segundos e diminui cerca de 20-30% da carga e faz mais repetições próximo a falha ou até a falha',
+  },
+  {
+    name: 'Rest pause',
+    shorter: 'RP',
+    description: 'é uma série onde se preserva a intensidade, por exemplo, o indivíduo realiza um agachamento com 6 repetições máximas, guarda o peso e descansa entre 10-20 segundos, e faz até a falha. Esse é o rest pause, normalmente usado sempre na última série de alguns exercícios, nas séries mais intensas. Pode fazer até 3 rest pause na série.',
+  },
+  {
+    name: 'Cluster set',
+    shorter: 'CS',
+    description: 'parecido com o rest pause, só que o cluster tem intervalo maior, por exemplo, usa uma série de 8/12/16 repetições, ao invés de realizar essa série de maneira direta, será quebrado em blocos de 4repetições, executar e descansar de 10-15 segundos e vai realizar mais 4 repetições, até chegar a falha de maneira que preserve a execução',
+  },
 ]
